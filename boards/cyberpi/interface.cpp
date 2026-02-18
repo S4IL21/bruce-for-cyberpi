@@ -2,16 +2,13 @@
 #include "cyberpi.h"
 #include "driver/gpio.h"
 
-// Board-specific setup
 void board_setup() {
-    // Initialize backlight pin
+    // Backlight ON
     gpio_set_direction(PIN_BL, GPIO_MODE_OUTPUT);
-    gpio_set_level(PIN_BL, 1);  // turn on backlight
+    gpio_set_level(PIN_BL, 1);
 
-    // Initialize the display HAL
+    // Init display HAL
     hagl_hal_init();
-
-    // Initialize the display
     hagl_init();
 
     // Clear screen
