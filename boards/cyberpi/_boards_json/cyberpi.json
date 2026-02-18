@@ -5,9 +5,11 @@
     "framework": "arduino",
     "variant": "pinouts"
   },
-  "name": "CyberPi",
+  "name": "CyberPi ESP32-D0WD 1.44 TFT",
   "upload": {
     "maximum_ram_size": 327680,
-    "maximum_size": 1310720
+    "maximum_size": 1310720,
+    "require_upload_port": true,
+    "speed": 460800
   }
 }
