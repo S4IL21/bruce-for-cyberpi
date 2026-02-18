@@ -1,1 +1,13 @@
-
+{
+  "build": {
+    "core": "esp32",
+    "board": "esp32dev",
+    "framework": "arduino",
+    "variant": "pinouts"
+  },
+  "name": "CyberPi",
+  "upload": {
+    "maximum_ram_size": 327680,
+    "maximum_size": 1310720
+  }
+}
